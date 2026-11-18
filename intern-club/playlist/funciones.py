@@ -30,7 +30,12 @@ def filtrar_por_genero(playlist, genero):
         filtrar_por_genero(PLAYLIST, "Rock")
         -> [{'titulo': 'De Musica Ligera', ...}, {'titulo': 'Rayando el Sol', ...}]
     """
-    # TODO: tu codigo aqui
+    newList = []
+    for cancion in playlist:
+        if genero == cancion["genero"]:
+            newList.append(cancion)
+    return newList
+
     pass
 
 
